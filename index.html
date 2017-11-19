@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sprite Animation</title>
+</head>
+<body>
+<br><br>
+<h1><b><i>Caterpillar strikes again</i></b></h1>
+<div class="container">
+<div id="adam"></div>
+<button onclick="playAnimation()">Play Again</button>
+<div>
+
+</body>
+
+</html>
+
+<style>
+
+h1 {
+  font-size: 50px;
+  color: green;
+  padding-left: 120px;
+  font-style: underline;
+}
+
+
+#adam{
+  background:url(appleMan2.png);
+  width: 145px;
+  height: 240px;
+  animation: throw-apple 2.5s steps(10) 1;
+  -webkit-animation: throw-apple 2.5s steps(10) 1;
+}
+@keyframes throw-apple {
+  from { background-position: 0px; }
+  to { background-position: -1775px; }
+}
+
+@-webkit-keyframes throw-apple {
+  from { background-position: 0px; }
+  to { background-position: -1775px; }
+}
+
+.container {
+  padding: 20px 300px;
+}
+
+</style>
+
